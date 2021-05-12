@@ -1,0 +1,140 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background: #0906c5;
+}
+
+.input-ele {
+    margin-left: 10px;
+    height: 40px;
+    width: 90px;
+    background-color: #0d208d;
+    border-radius: 20%;
+    font-family: 'Droid serif', serif;
+    font-size: 20px;
+    font-weight: 400; 
+    color: #ffffff;
+    text-align: center;
+    
+}
+
+.addedele {
+    box-sizing: border-box;
+    border: 2px solid #e74c3c;
+    border-radius: 0.6em;
+    margin-left: 5px;
+    text-align: center;
+    width: 90px;
+    height: 40px;
+    padding : 10px 10px 10px 10px;
+    background-color : #db3495;
+    color: #ffffff; 
+    font-family: 'Droid serif', serif; 
+    font-size: 25px; 
+    font-weight: 400; 
+}
+
+h1 { 
+    color: #ffffff; 
+    font-family: 'Droid serif', serif; 
+    font-size: 36px; 
+    font-weight: 600; 
+    font-style: italic; 
+    line-height: 44px; 
+    margin: 0 0 12px; 
+    text-align: center;
+}
+h3 { 
+    color: #ffffff; 
+    font-family: 'Droid serif', serif; 
+    font-size: 25px; 
+    font-weight: 400; 
+    font-style: italic; 
+    line-height: 44px; 
+}
+
+#array {
+    background: #0906c5;
+    height: 400px;
+    width: 500px;
+    margin: auto;
+    position: relative;
+    margin-top: 2px;
+}
+  
+.block {
+    width: 5%;
+    background-color: #ee18e3;
+    position: absolute;
+    bottom: 0px;
+    transition: 0.2s all ease;
+}
+  
+.block_id {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-family: 'Droid serif', serif; 
+    margin-top: -20px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.btn {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    border-radius: 0.6em;
+    color: #e74c3c;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    font-family: 'Droid serif', serif; 
+    font-size: 16px; 
+    font-weight: 400; 
+    font-style: italic; 
+    line-height: 1;
+    margin: 20px;
+    padding: 1em 2em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+
+    
+    border-color: #3498db;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+.btn:hover {
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+}
+/*
+.sort_btn {
+    margin-left:35% ;
+}*/
+
+.bt {
+    margin-left: 10px;
+}
+.reloadbtn {
+    margin-left: 45%;
+}
+
+.buttons-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+
+</head>
+
+<body>
+    <br />
+    <h1>Bubble Sort Visualization </h1>
+
+    <div id="displayelement" class="display-elements">
+
+        <h3>Enter elements here (less than 100)</h3>
+
+        <form action="index.html" method="post">
+
+            <input class="input-ele" type="text" id="arrele" autocomplete="off">
+
+            <input class="btn bt" type="button" id="add_btn" value="Add" onclick="add_element_to_Array()">
+
+        </form>
+
+    </div>
+
+    <div class="buttons-div">
+
+        <button class="btn sort_btn" id="sortaddedele" onclick="generatearrayelements()">Click to sort the added
+            elements</button>
+
+        <button class="btn sort_btn" id="sortautoele" onclick="generateautoarray()">Click to auto generate and
+            sort</button>
+
+    </div>
+    <div id="array"></div>
+
+    <br>
+    <br>
+
+    <script src="scripts.js"></script>
+
+    <h1>Bubble sort :)</h1>
+
+    <button class="btn reloadbtn" id="reloadingpage" onclick="reloadpage()">Reset</button>
+</body>
+
+</html>
