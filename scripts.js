@@ -40,12 +40,14 @@ function add_element_to_Array() {
         }
         else {
             alert("Please enter integers below 100");
+            document.getElementById("arrele").value = "";
             autofocusit();
         }
       }
       
       else {
           alert("please enter an integer");
+          document.getElementById("arrele").value = "";
           autofocusit();
       }
     }
