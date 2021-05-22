@@ -1,4 +1,4 @@
-const array = Array();
+let array = Array();
 
 let x = 0;
 
@@ -169,18 +169,20 @@ async function bubbleSort(delay = 200) {
     }
 }
   
+
+
 function reset() {
-    
     while(array.length > 0) {
         array.pop();
     }
     
-    document.getElementById('array').innerHTML = '';
     document.getElementById('displayhere').innerHTML = '';
+    document.getElementById('array').innerHTML = '';
     document.getElementById("sortaddedele").disabled = false;
     document.getElementById("sortautoele").disabled = false;
     document.getElementById("add_btn").disabled = false;
     document.getElementById("arrele").value = "";
+
     anyfunction = false;
     x = 0;
 }
