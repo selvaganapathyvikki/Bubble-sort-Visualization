@@ -45,7 +45,7 @@ function displayElement(s) {
   z.setAttribute("value", s);
   z.readOnly = true;
   displayelement.appendChild(z);
-
+  autofocusit();
 }
 
 var container = document.getElementById("array");
