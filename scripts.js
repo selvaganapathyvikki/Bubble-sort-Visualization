@@ -185,6 +185,7 @@ function reset() {
 
     anyfunction = false;
     x = 0;
+    autofocusit();
 }
   
 function swapElemets(element1, element2) {
