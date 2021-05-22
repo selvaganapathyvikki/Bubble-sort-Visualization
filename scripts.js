@@ -2,6 +2,20 @@ const array = Array();
 
 let x = 0;
 
+let anyfunction = false;
+
+let textarea = document.getElementById('arrele');
+
+textarea.addEventListener('keydown', (e) => {
+    if(anyfunction) {
+        e.preventDefault();
+    }
+    else if(e.key === "Enter" && !anyfunction) {
+        e.preventDefault();
+        add_element_to_Array();
+    }
+});
+
 function add_element_to_Array() {
   
   if (x >= 20) {
@@ -56,7 +70,7 @@ function generatearrayelements() {
 }
 
 function generateautoarray() {
-
+    anyfunction = true;
     for (var i = 0; i < 15; i++) {
 
         var value = Math.ceil(Math.random() * 100);
@@ -89,6 +103,7 @@ function generateaddedelements(array) {
     }
   
     else {
+        anyfunction = true;
         for (var i = 0; i < array.length; i++) {
 
             var value = array[i];
