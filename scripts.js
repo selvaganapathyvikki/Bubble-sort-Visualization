@@ -98,7 +98,8 @@ function generateautoarray() {
     document.getElementById("sortaddedele").disabled = true;
     document.getElementById("sortautoele").disabled = true;
     document.getElementById("add_btn").disabled = true;
-
+    
+    scroll();
     bubbleSort();
 
 }
@@ -132,6 +133,7 @@ function generateaddedelements(array) {
         document.getElementById("sortautoele").disabled = true;
         document.getElementById("add_btn").disabled = true;
 
+        scroll()
         bubbleSort();
     }
     
@@ -210,4 +212,8 @@ function swapElemets(element1, element2) {
 
 function autofocusit() {
     document.getElementById("arrele").focus();
+}
+
+function scroll() {
+    window.scrollBy(0, 300);
 }
