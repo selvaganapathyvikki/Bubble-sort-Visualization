@@ -107,6 +107,7 @@ function generateaddedelements(array) {
 
     if(array.length < 1) {
         alert("Please add elements or click auto generating button");
+        autofocusit();
     }
   
     else {
