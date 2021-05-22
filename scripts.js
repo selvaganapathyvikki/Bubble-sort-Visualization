@@ -170,6 +170,7 @@ async function bubbleSort(delay = 200) {
 }
   
 function reset() {
+    array.length = 0;
     document.getElementById('array').innerHTML = '';
     document.getElementById('displayhere').innerHTML = '';
     document.getElementById("sortaddedele").disabled = false;
@@ -177,6 +178,7 @@ function reset() {
     document.getElementById("add_btn").disabled = false;
     document.getElementById("arrele").value = "";
     anyfunction = false;
+    x = 0;
 }
   
 function swapElemets(element1, element2) {
