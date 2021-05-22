@@ -133,7 +133,7 @@ function generateaddedelements(array) {
         document.getElementById("sortautoele").disabled = true;
         document.getElementById("add_btn").disabled = true;
 
-        scroll()
+        scroll();
         bubbleSort();
     }
     
