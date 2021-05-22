@@ -197,7 +197,12 @@ function swapElemets(element1, element2) {
         window.requestAnimationFrame(function() {
   
             setTimeout(() => {
-                container.insertBefore(element2, element1);
+                try {
+                    container.insertBefore(element2, element1);
+                }
+                catch {
+                    console.log("Reset done :)");
+                }
                 resolve();
             }, 300);
         });
