@@ -6,6 +6,7 @@ function add_element_to_Array() {
   
   if (x >= 20) {
     alert("max elements reached");
+    autofocusit();
   } 
   
   else {
@@ -24,11 +25,13 @@ function add_element_to_Array() {
         }
         else {
             alert("Please enter integers below 100");
+            autofocusit();
         }
       }
       
       else {
           alert("please enter an integer");
+          autofocusit();
       }
     }
   }
@@ -162,4 +165,8 @@ function swapElemets(element1, element2) {
             }, 300);
         });
     });
+}
+
+function autofocusit() {
+    document.getElementById("arrele").focus();
 }
