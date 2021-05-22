@@ -17,7 +17,8 @@ textarea.addEventListener('keydown', (e) => {
 });
 
 function add_element_to_Array() {
-  
+  autofocusit();
+    
   if (x >= 20) {
     alert("max elements reached");
     autofocusit();
