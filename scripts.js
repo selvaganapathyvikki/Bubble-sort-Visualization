@@ -174,6 +174,7 @@ function reset() {
     document.getElementById("sortaddedele").disabled = false;
     document.getElementById("sortautoele").disabled = false;
     document.getElementById("add_btn").disabled = false;
+    document.getElementById("arrele").value = "";
     anyfunction = false;
 }
   
