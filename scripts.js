@@ -104,7 +104,8 @@ function generateaddedelements(array) {
         }
         document.getElementById("sortaddedele").disabled = true;
         document.getElementById("sortautoele").disabled = true;
-
+        document.getElementById("add_btn").disabled = true;
+      
         bubbleSort();
     }
     
