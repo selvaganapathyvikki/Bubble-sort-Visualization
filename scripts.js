@@ -170,7 +170,11 @@ async function bubbleSort(delay = 200) {
 }
   
 function reset() {
-    array.length = 0;
+    
+    while(array.length > 0) {
+        array.pop();
+    }
+    
     document.getElementById('array').innerHTML = '';
     document.getElementById('displayhere').innerHTML = '';
     document.getElementById("sortaddedele").disabled = false;
