@@ -18,13 +18,14 @@ textarea.addEventListener('keydown', (e) => {
 
 function add_element_to_Array() {
   autofocusit();
-    
+
   if (x >= 20) {
     alert("max elements reached");
     autofocusit();
   } 
   
   else {
+    
     
     if (document.getElementById("arrele").value != "") {
 
@@ -33,6 +34,7 @@ function add_element_to_Array() {
       if(!isNaN(n)){
 
         if(n < 100){
+            
             array[x] = n;
             x++;
             document.getElementById("arrele").value = "";
@@ -61,8 +63,9 @@ function displayElement(s) {
   z.setAttribute("type", "text");
   z.setAttribute("value", s);
   z.readOnly = true;
-  displayelement.appendChild(z);
+  displayhere.appendChild(z);
   autofocusit();
+
 }
 
 var container = document.getElementById("array");
@@ -74,6 +77,7 @@ function generatearrayelements() {
 
 function generateautoarray() {
     anyfunction = true;
+
     for (var i = 0; i < 15; i++) {
 
         var value = Math.ceil(Math.random() * 100);
@@ -126,7 +130,7 @@ function generateaddedelements(array) {
         document.getElementById("sortaddedele").disabled = true;
         document.getElementById("sortautoele").disabled = true;
         document.getElementById("add_btn").disabled = true;
-      
+
         bubbleSort();
     }
     
@@ -164,8 +168,13 @@ async function bubbleSort(delay = 200) {
     }
 }
   
-function reloadpage() {
-    location.reload();
+function reset() {
+    document.getElementById('array').innerHTML = '';
+    document.getElementById('displayhere').innerHTML = '';
+    document.getElementById("sortaddedele").disabled = false;
+    document.getElementById("sortautoele").disabled = false;
+    document.getElementById("add_btn").disabled = false;
+    anyfunction = false;
 }
   
 function swapElemets(element1, element2) {
@@ -184,6 +193,7 @@ function swapElemets(element1, element2) {
         });
     });
 }
+
 
 function autofocusit() {
     document.getElementById("arrele").focus();
